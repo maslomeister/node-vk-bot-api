@@ -360,6 +360,7 @@ interface VkBotClientInfo {
 
 interface VkBotMessage {
   id: number;
+  type?: "message_allow" | "message_deny";
   date: number;
   peer_id: number;
   from_id: number;
